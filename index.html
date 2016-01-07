@@ -5,18 +5,26 @@
     <title>JavaScript Prompts</title>
   </head>
   <body>
-    <h1>Tell us a little about yourself.</h1>
+    <h1>Tell Us A Little About Yourself.</h1>
     <p>
-      Name: <div id="name"></div>
+      <b>Name: </b>
+      <span id="name"></span>
     </p>
     <p>
-      Favorite Color: <div id="color"></div>
+      <b>Favorite Color: </b>
+      <span id="color"></span>
     </p>
     <p>
-      Favorite Ice Cream: <div id="icecream"></div>
+      <b>Favorite Ice Cream: </b>
+      <span id="ice-cream"></span>
     </p>
     <script type="text/javascript">
-      
+      var name = prompt("What's your name?")
+      document.getElementById('name').innerHTML = name
+      var color = prompt("What's your favorite color?")
+      document.getElementById('color').innerHTML = color
+      var iceCream = prompt("What's your favorite ice cream?")
+      document.getElementById('ice-cream').innerHTML = iceCream
     </script>
   </body>
 </html>
